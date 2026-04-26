@@ -11,9 +11,11 @@ Once called, enter file location (full path if not in same folder)
 
 3. Implementation Details
 
-    How you parse the two-part timestamp
-    Why you chose Counter vs dictionaries
-    How you handle malformed logs
+    2 part timestamp parsed with using line.split to separate into parts, and taking the first two parts (the timestamp) and splitting them on the space into the full timestamp. If there are not at least 2 parts in the line it will skip that line. During the validation, if there is no timestamp it also skips the line.
+
+    Counter is designed for tallying hashable objects, like IPs and Usernames, thus making it a cleaner approach to counting in this case. Easier to add to than iterating over dictionary keys
+
+    Malformed logs are skipped if too malformed, but if containing the necessary fields than a warning about malformed log is displayed and the required data is still parsed
 
 4. Error Handling
 
