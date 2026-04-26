@@ -1,0 +1,36 @@
+1. Description
+
+This is a log parser that generates a report based on a log file, allowing the analyst to quickly discern if a brute force attack is in place, as well as helpful statistics about attacking IPs and targeted users.
+
+2. How to Use It
+
+From command line, call
+    python auth_scanner.py
+
+Once called, enter file location (full path if not in same folder)
+
+3. Implementation Details
+
+    How you parse the two-part timestamp
+    Why you chose Counter vs dictionaries
+    How you handle malformed logs
+
+4. Error Handling
+
+Can handle edge cases such as:
+    Empty lines
+    Missing timestamp
+    Malformed key=value pairs
+    Missing required fields
+    File not found
+    Ran on empty file and tried to divide by 0
+
+For severely malformed lines, discards line and updates error count
+
+5. AI Usage
+
+I did not use AI tools
+
+6. Challenges
+
+Biggest challenge was getting error handling to function, because there was so many different types of errors in the log file that might appear. I solved this by slowing down and working each error one at a time before orchestrating that handling together into the parse_log_line function
