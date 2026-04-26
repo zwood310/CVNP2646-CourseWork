@@ -1,0 +1,37 @@
+
+PYTHON FILE ORGANIZER
+
+This is a file organizer that scans a directory, categorizes the files contained within, and moves them to new subdirectories based on extensions.
+Can be used by anyone wanting to organize their computer!
+
+2. Installation & Usage
+
+How to run it: python organizer.py
+Will be asked to input directory path after running...
+
+3. Features
+
+Categorizes files as:
+- DOCUMENTS
+- IMAGES
+- EXECUTABLES
+- ARCHIVES
+- VIDEO
+- AUDIO
+- OTHERS
+
+Generate human-readable text report about files categorized
+
+4. Design Decisions
+Modules:
+Used pathlib because of its object oriented approach
+Used glob because I couldn't get pathlib suffixes to work...
+Existing files/directories handled with exist_ok=True, just leaves them as is
+
+5. AI Tool Usage
+I did not use AI tools
+
+6. Challenges & Solutions
+
+This was very hard! I learned a lot about python basics (lists, dictionaries, modules, creating and calling functions, error handling)
+My greatest problem was getting pathlib suffixes to work for easy extension handling. I could not get it to work and researched workarounds and settled on using glob.glob

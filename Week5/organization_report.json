@@ -1,0 +1,15 @@
+{
+    "timestamp": "2026-04-12T22:11:59.502270",
+    "source_directory": "C:\\test_downloads - Copy",
+    "total_files": 10,
+    "categories": {
+        "documents": 3,
+        "images": 1,
+        "executables": 1,
+        "archives": 2,
+        "videos": 1,
+        "audio": 1,
+        "other": 1
+    },
+    "organized": 10
+}
