@@ -1,0 +1,53 @@
+[
+  {
+    "metadata": {
+      "generated_at": "2026-04-26T18:53:51.436983",
+      "analyst": "Zaire Wood",
+      "classification": "INTERNAL"
+    },
+    "results": {
+      "summary": {
+        "total_events": 20,
+        "total_success": 4,
+        "total_fail": 13,
+        "failure_rate": 76.47
+      },
+      "top_targeted_users": [
+        {
+          "username": "admin",
+          "failed_attempts": 8
+        },
+        {
+          "username": "root",
+          "failed_attempts": 3
+        },
+        {
+          "username": "administrator",
+          "failed_attempts": 1
+        },
+        {
+          "username": "test",
+          "failed_attempts": 1
+        }
+      ],
+      "top_attacking_ips": [
+        {
+          "ip_address": "198.51.100.45",
+          "failed_attempts": 8
+        },
+        {
+          "ip_address": "203.0.113.89",
+          "failed_attempts": 2
+        },
+        {
+          "ip_address": "192.0.2.15",
+          "failed_attempts": 2
+        },
+        {
+          "ip_address": "198.51.100.92",
+          "failed_attempts": 1
+        }
+      ]
+    }
+  }
+]
