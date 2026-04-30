@@ -1,0 +1,27 @@
+{
+  "plan_name": "Security Logs Daily Backup",
+  "version": "1.0",
+  "created_by": "security_team",
+  "description": "Daily backup of critical security logs",
+
+  "sources": [
+    {
+      "path": "",
+      "recursive": "maybe",
+      "include_patterns": {"log": "*.txt"},
+      "exclude_patterns": ["*.tmp", "debug_*"]
+    },
+    {
+      "name": "yippee",
+      "path": "/var/log/suricata",
+      "recursive": false,
+      "include_patterns": ["fast.log", "eve.json"],
+      "exclude_patterns": []
+    }
+  ],
+
+  "options": [
+    "verify_backups", true,
+    "max_file_size_mb", 100
+  ]
+}
